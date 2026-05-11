@@ -1,0 +1,43 @@
+# provjera depencija
+sudo pacman -S --needed base-devel openssl tk libffi xz
+# zlib-ng-compat je ok, nemoj dirati zlib
+sudo pacman -S vtk qt6-base
+
+
+sudo pacman -S pyenv
+paru -S pyenv-virtualenv
+
+# napravi fish config za pyenv
+mkdir -p ~/.config/fish/conf.d
+nano ~/.config/fish/conf.d/pyenv.fish
+
+# kopiraj ovo
+set -x PYENV_ROOT $HOME/.pyenv
+set -x PATH $PYENV_ROOT/bin $PATH
+
+status --is-interactive; and pyenv init - | source
+status --is-interactive; and pyenv virtualenv-init - | source
+
+# reload shell
+exec fish
+
+# provjera (VRLO BITNO)
+which pyenv
+pyenv commands | grep virtualenv
+
+# instalacija pythona
+pyenv install 3.10.14
+
+# pyvista okolina
+pyenv virtualenv 3.10.14 pyvista-env
+pyenv activate pyvista-env
+pip install pyvista[all]
+python -m pip install --upgrade pip
+pip install ipykernel jupyterlab notebook
+
+python -m ipykernel install --user --name=pyvista-env --display-name "Python (PyVista)"
+
+# postavljanje pyvista direktorija za uatomatsko pozivanjeo okoline
+cd Documents/python/pyvista/
+pyenv local pyvista-env
+
