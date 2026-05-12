@@ -5,7 +5,7 @@
 </p>
 
 Zbirka 3D vizualizacija i matematičkih ploha implementiranih u **PyVista** biblioteki s različitim naprednijim tehnikama poput PBR (Physically Based Rendering) i optimizacijom performansi.
-S vremenom će se dodavati drugi primjeri kao me uhvati inspiracija.
+S vremenom će se dodavati drugi primjeri kako me uhvati inspiracija. 🚀🐍✨
 
 ## O projektu
 
