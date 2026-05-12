@@ -15,4 +15,4 @@ uz korištenje naprednih tehnika sjenčanja, HDR mapa okoliša i hardverske opti
 ---
 **Maintained by [damba8-linux](https://github.com/damba8-linux)** 🚀  
 🌐 **Visit my website:** [dambamath.com](https://dambamath.com) 🐧  
-📺 [YouTube](https://youtu.be/BIeQYzJdcuc)
+📺 **Watch video:** [YouTube](https://youtu.be/BIeQYzJdcuc)
