@@ -136,12 +136,12 @@ plotter.add_mesh(proj_x, **proj_args)
 plotter.camera_position = [(14, -16, 10), (0, 0, 4), (0, 0, 1)]
 plotter.camera.zoom(0.8)
 
-print("Boyeva ploha VAU!")
-plotter.show()
+# print("Boyeva ploha VAU!")
+# plotter.show()
 
-# # Definiraj ime datoteke
-# html_file = "boy_surface_vizualizacija.html"
-# # Exportaj scenu
-# # backend='vtkjs' je standardni i najstabilniji za interaktivni prikaz
-# plotter.export_html(html_file)
-# print(f"Gotovo! Otvori datoteku '{html_file}' u svom pregledniku.")
+# Definiraj ime datoteke
+html_file = "boy_surface_vizualizacija.html"
+# Exportaj scenu
+# backend='vtkjs' je standardni i najstabilniji za interaktivni prikaz
+plotter.export_html(html_file)
+print(f"Gotovo! Otvori datoteku '{html_file}' u svom pregledniku.")

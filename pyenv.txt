@@ -41,3 +41,6 @@ python -m ipykernel install --user --name=pyvista-env --display-name "Python (Py
 cd Documents/python/pyvista/
 pyenv local pyvista-env
 
+
+# za mp4 animacije
+pip install imageio[ffmpeg]
